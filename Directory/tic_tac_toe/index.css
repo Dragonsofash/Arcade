@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/arcadeGrid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: content;
+    color: fuchsia;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 8em;
+    -webkit-text-stroke: 3px aqua;
+    text-shadow: 0px 0px 25px;
+}
+
+nav {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.mode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 0px 15px;
+}
+
+button {
+    margin: 0px 10px;
+    padding: 10px;
+    background-color: aqua;
+    border: 2px solid fuchsia;
+    color: fuchsia;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+p {
+    background-color: aliceblue;
+    border: 2px solid fuchsia;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+table {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    margin: 25px;
+}
+
+tbody {
+    border: 5px solid aqua;
+    width: fit-content;
+    height: fit-content;
+}
+
+.cell {
+    width: 200px;
+    height: 200px;
+    font-size: 100px;
+    border: 5px solid fuchsia;
+    text-align: center;
+    flex-basis: 250px;
+    flex-shrink: 0;
+    -webkit-text-stroke: 2px aqua;
+    text-shadow: 0px 0px 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > div {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+nav {
+    justify-content: center;
+}
+
+nav > button {
+    margin: 10px;
+}

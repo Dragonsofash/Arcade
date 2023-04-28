@@ -1,0 +1,114 @@
+body {
+    background-image: url(images/arcadeGrid.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: fuchsia;
+}
+
+header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 8em;
+    -webkit-text-stroke: 3px aqua;
+    text-shadow: 0px 0px 25px;
+}
+
+nav {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+.mode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    padding: 0px 15px;
+}
+
+button {
+    margin: 0px 10px;
+    padding: 10px;
+    background-color: aqua;
+    border: 2px solid fuchsia;
+    color: fuchsia;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+p {
+    background-color: aliceblue;
+    border: 2px solid fuchsia;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    /* background-image: url('images/purpleWood.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 25px;
+    width: fit-content;
+    height: fit-content;
+    margin: 50px 100px;
+    padding: 20px;
+    border-radius: 15px;
+    flex-shrink: 1;
+}
+
+#man1 {
+    height: auto;
+    width: 100px;
+    border-radius: 50%;
+    margin: 25px;
+    /* background-color: fuchsia; */
+    box-shadow: inset rgb(70, 70, 70) 0px 0px 25px 15px;
+}
+
+.pots {
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+#row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#man2 {
+    height: auto;
+    width: 100px;
+    border-radius: 50%;
+    margin: 25px;
+    /* background-color: fuchsia; */
+    box-shadow: inset rgb(70, 70, 70) 0px 0px 25px 15px;
+}
+
+.pot {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    /* background-color: fuchsia; */
+    box-shadow: inset rgb(70, 70, 70) 0px 0px 25px 15px;
+}

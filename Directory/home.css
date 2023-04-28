@@ -1,0 +1,45 @@
+html {
+    background-image: url('images/arcade8bit.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    color: fuchsia;
+}
+
+h1 {
+    font-size: 8em;
+    -webkit-text-stroke: 3px aqua;
+    text-shadow: 0px 0px 25px;
+    margin: 150px 0px 0px 80px;
+}
+
+p {
+    font-size: 32px;
+    text-align: center;
+    margin: 30px 250px 30px 750px;
+    background-color: lightblue;
+    opacity: 0.8;
+    border-radius: 25%;
+    padding: 25px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 3vw;
+    margin: 10px;
+    color: aqua;
+    background-color: fuchsia;
+    text-shadow: 0px 0px 5px;
+    border-color: aqua;
+}
+
+button:hover {
+    background-color: blueviolet;
+}

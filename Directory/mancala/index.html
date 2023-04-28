@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
     <title>Mancala</title>
 </head>
 <body>
-    
+    <header>Mancala</header>
+    <nav>
+        <button>How to Play</button>
+        <div class="mode">
+            <button>&lt;</button>
+            <p>Select your Mode</p>
+            <button>&gt;</button>
+        </div>
+        <button>Exit</button>
+    </nav>
+    <div id="board">
+        <div class="player1" id="man1"></div>
+        <div class="pots">
+            <div class="player1" id="row1">
+                <div class="pot" id="pot1"></div>
+                <div class="pot" id="pot2"></div>
+                <div class="pot" id="pot3"></div>
+                <div class="pot" id="pot4"></div>
+                <div class="pot" id="pot5"></div>
+                <div class="pot" id="pot6"></div>
+            </div>
+            <div class="player2" id="row2">
+                <div class="pot" id="pot7"></div>
+                <div class="pot" id="pot8"></div>
+                <div class="pot" id="pot9"></div>
+                <div class="pot" id="pot10"></div>
+                <div class="pot" id="pot11"></div>
+                <div class="pot" id="pot12"></div>
+            </div>
+        </div>
+        <div class="player2" id="man2"></div>
+    </div>
 </body>
 </html>

@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
     <title>Tic-Tac-Toe</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <audio src="audio/Dreaming.ogg" autoplay loop></audio>
+    <header>Tic-Tac-Toe</header>
+    <nav>
+      <a
+        href="https://www.exploratorium.edu/explore/puzzles/tictactoe#:~:text=Rules%20for%20Tic%2DTac%2DToe,or%20diagonally)%20is%20the%20winner."
+        target="_blank"
+        ><button id="how-to">How to Play</button></a
+      >
+      <div class="mode">
+        <button id="1Player">&lt;</button>
+        <p id="selected-mode">Select your Mode</p>
+        <button id="2Player">&gt;</button>
+      </div>
+      <a href="Directory\home.html"><button>Exit</button></a>
+    </nav>
+    <table id="board">
+      <tbody>
+        <tr id="row1">
+          <td class="cell">X</td>
+          <td class="cell">X</td>
+          <td class="cell">X</td>
+        </tr>
+        <tr id="row2">
+          <td class="cell">X</td>
+          <td class="cell">X</td>
+          <td class="cell">X</td>
+        </tr>
+        <tr id="row3">
+          <td class="cell">X</td>
+          <td class="cell">X</td>
+          <td class="cell">X</td>
+        </tr>
+      </tbody>
+    </table>
+    <footer>
+      <div>Try these Games too:</div>
+      <nav>
+        <button>Connect 4</button>
+        <button>Mancala</button>
+        <button>Snake</button>
+      </nav>
+    </footer>
+  </body>
 </html>

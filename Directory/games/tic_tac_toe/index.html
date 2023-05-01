@@ -9,8 +9,17 @@
     <title>Tic-Tac-Toe</title>
   </head>
   <body>
-    <audio src="audio/Dreaming.ogg" autoplay loop></audio>
+    <!-- <audio src="audio/Dreaming.ogg" autoplay loop></audio> -->
     <header>Tic-Tac-Toe</header>
+    <section id="players">
+      <div class="1PScore"></div>
+      <label for="1Player">Player 1:</label>
+      <input type="text" id="1Player" placeholder="Enter Your Name">
+      <p>VS</p>
+      <div class="2PScore"></div>
+      <label for="2Player">Player 2:</label>
+      <input type="text" id="2Player" placeholder="Enter Your Name">
+    </section>
     <nav>
       <a
         href="https://www.exploratorium.edu/explore/puzzles/tictactoe#:~:text=Rules%20for%20Tic%2DTac%2DToe,or%20diagonally)%20is%20the%20winner."
@@ -18,28 +27,29 @@
         ><button id="how-to">How to Play</button></a
       >
       <div class="mode">
-        <button id="1Player">&lt;</button>
+        <button id="vsComp">&lt;</button>
         <p id="selected-mode">Select your Mode</p>
-        <button id="2Player">&gt;</button>
+        <button id="pvp">&gt;</button>
       </div>
+      <button id="reset">RESET</button>
       <a href="Directory\home.html"><button>Exit</button></a>
     </nav>
     <table id="board">
       <tbody>
         <tr id="row1">
-          <td class="cell">X</td>
-          <td class="cell">X</td>
-          <td class="cell">X</td>
+          <td class="cell">0</td>
+          <td class="cell">1</td>
+          <td class="cell">2</td>
         </tr>
         <tr id="row2">
-          <td class="cell">X</td>
-          <td class="cell">X</td>
-          <td class="cell">X</td>
+          <td class="cell">3</td>
+          <td class="cell">4</td>
+          <td class="cell">5</td>
         </tr>
         <tr id="row3">
-          <td class="cell">X</td>
-          <td class="cell">X</td>
-          <td class="cell">X</td>
+          <td class="cell">6</td>
+          <td class="cell">7</td>
+          <td class="cell">8</td>
         </tr>
       </tbody>
     </table>

@@ -1,11 +1,85 @@
 # Arcade
 A Collection of Games.
 ## The Goal
-To create a functional collection of games:
-    -connect 4
-    -mancala
-    -snake
-    -tic tac toe
+MANCALA
+
+    As users playing a two player game we want to:
+
+        enter our names and have them displayed
+        have our order chosen for us by the game
+        take alternating turns according to the rules
+        pick a pit that has pips and is ours on our turn
+        have those pips distributed correctly according to the rules of mancala
+        capture opponent pips when we end in an empty pit on our side
+        take an extra turn when we end in our mancala
+        be told when a player wins or if there is a draw once all pips are in mancalas
+        start the game over without having to reset the browser
+
+    As a user playing a one player game I want to:
+
+        see the name 'Computer' displayed as my opponent
+        have the Computer player make moves as if it were a human player, obeying all the rules from the two player game
+
+    As a user playing a single player game I would be delighted if:
+
+        the computer made 'better-than-guessing' choices when choosing a pit for the next move
+
+TIC-TAC-TOE
+
+As users playing a two player game we want to:
+
+enter our names and have them displayed
+have our order chosen for us by the game
+take turns placing our marks in empty spaces
+not be able to place our marks in an occupied space
+be told when a move causes a player to win, or to draw
+start the game over without having to reset the browser
+
+As a user playing a one player game I want to:
+
+see the name 'Computer' displayed as my opponent
+have the Computer player make moves as if it were a human player with the correct mark in an empty space
+
+As a user playing a single player game I would be delighted to:
+
+have the Computer make 'better-than-guessing' choices when placing a mark on the board
+set the board size myself ("wider" or "taller" than 3x3)
+CONNECT FOUR
+
+As users playing a two player game we want to:
+
+enter our names and have them displayed
+have our order chosen for us by the game
+take turns by dropping our chip into a column on the grid
+not be able to drop a chip into a totally filled column
+be told when a move causes a player to win, or to draw
+start the game over without having to reset the browser
+
+As a user playing a single player game I additionally want to:
+
+see the name 'Computer' displayed as my opponent
+have the Computer player choose columns as if it were a human player
+
+As a user playing a single player game I would be delighted if:
+
+the Computer chooses the correct column for a win, when possible
+
+SNAKE
+
+As a user playing the game I want to:
+
+start the game by pressing a Start button
+use my arrow keys to change the direction of the snake
+have the snake grow correctly when it eats the apple
+have the game end if the snake tries to eat itself
+have the game end if the snake runs into a wall
+see how long my snake was when the game ended
+start the game over without having to reset the browser
+
+As a user playing a single player game I would be delighted if:
+
+can set the difficulty (speed of snake)
+can keep track of my stats (maximum points, average points, etc.) between games
 
 #### Connect 4
 -Create a grid of user entered columns and rows. Must be at least 4 tall/wide

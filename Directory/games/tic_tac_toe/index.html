@@ -11,54 +11,52 @@
   <body>
     <!-- <audio src="audio/Dreaming.ogg" autoplay loop></audio> -->
     <header>Tic-Tac-Toe</header>
-    <section id="players">
-      <div class="1PScore"></div>
-      <label for="1Player">Player 1:</label>
-      <input type="text" id="1Player" placeholder="Enter Your Name">
-      <p>VS</p>
-      <div class="2PScore"></div>
-      <label for="2Player">Player 2:</label>
-      <input type="text" id="2Player" placeholder="Enter Your Name">
+    <section id="scoreboard">
+      <div id="p1Score">0</div>
+      <label for="p1Name">Player 1:</label>
+      <input type="text" id="p1Name" placeholder="Enter Your Name">
+      <div>VS</div>
+      <div id="p2Score">0</div>
+      <label for="p2Name">Player 2:</label>
+      <input type="text" id="p2Name" placeholder="Enter Your Name">
     </section>
     <nav>
       <a
         href="https://www.exploratorium.edu/explore/puzzles/tictactoe#:~:text=Rules%20for%20Tic%2DTac%2DToe,or%20diagonally)%20is%20the%20winner."
         target="_blank"
-        ><button id="how-to">How to Play</button></a
-      >
-      <div class="mode">
-        <button id="vsComp">&lt;</button>
-        <p id="selected-mode">Select your Mode</p>
-        <button id="pvp">&gt;</button>
-      </div>
+        ><button id="how-to">How to Play</button></a>
+      <select id="modeSelect">
+        <option value="vsComp">Single Player</option>
+        <option value="vsPlayer">Two Player</option>
+      </select>
       <button id="reset">RESET</button>
-      <a href="Directory\home.html"><button>Exit</button></a>
+      <a href="../../home.html"><button>Exit</button></a>
     </nav>
     <table id="board">
       <tbody>
         <tr id="row1">
-          <td class="cell">0</td>
-          <td class="cell">1</td>
-          <td class="cell">2</td>
+          <td class="cell" id="cell1"></td>
+          <td class="cell" id="cell2"></td>
+          <td class="cell" id="cell3"></td>
         </tr>
         <tr id="row2">
-          <td class="cell">3</td>
-          <td class="cell">4</td>
-          <td class="cell">5</td>
+          <td class="cell" id="cell4"></td>
+          <td class="cell" id="cell5"></td>
+          <td class="cell" id="cell6"></td>
         </tr>
         <tr id="row3">
-          <td class="cell">6</td>
-          <td class="cell">7</td>
-          <td class="cell">8</td>
+          <td class="cell" id="cell7"></td>
+          <td class="cell" id="cell8"></td>
+          <td class="cell" id="cell9"></td>
         </tr>
       </tbody>
     </table>
     <footer>
       <div>Try these Games too:</div>
       <nav>
-        <button>Connect 4</button>
-        <button>Mancala</button>
-        <button>Snake</button>
+        <a href="../connect4/index.html"><button>Connect 4</button></a>
+        <a href="../mancala/"><button>Mancala</button></a>
+        <a href="../snake/index.html"><button>Snake</button></a>
       </nav>
     </footer>
   </body>

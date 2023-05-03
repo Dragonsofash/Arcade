@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <script src="index.js" defer type="module"></script>
     <title>Snake</title>
 </head>
 <body>
     <header>Snake</header>
     <nav>
         <button>How to Play</button>
-        <div class="mode">
-            <button>&lt;</button>
-            <p>Select your Mode</p>
-            <button>&gt;</button>
-        </div>
-        <button>Exit</button>
+        <select id="modeSelect">
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+        </select>
+        <a href="../../home.html"><button>Exit</button></a>
     </nav>
-    <table>
+    <table id="gameboard">
        <!-- difficulty chosen will determin size of table -->
     </table>
+    <footer>
+        <div>Try these Games too:</div>
+        <nav>
+          <a href="../connect4/index.html"><button>Connect 4</button></a>
+          <a href="../mancala/index.html"><button>Mancala</button></a>
+          <a href="../tic_tac_toe/index.html"><button>Tic-Tac-Toe</button></a>
+        </nav>
+      </footer>
 </body>
 </html>

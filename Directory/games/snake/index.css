@@ -1,6 +1,73 @@
-td {
-    background-color: lightgrey;
-    border: 1px solid grey;
-    width: 25px;
-    height: 25px;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/pink-purple-grid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: content;
+    color: fuchsia;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 8em;
+    -webkit-text-stroke: 3px aqua;
+    text-shadow: 0px 0px 25px;
+}
+
+button {
+    margin: 0px 10px;
+    padding: 10px;
+    background-color: aqua;
+    border: 2px solid fuchsia;
+    color: fuchsia;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+footer > div {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    color: greenyellow;
+}
+
+nav {
+    justify-content: center;
+}
+
+nav > button {
+    margin: 10px;
+}
+
+#gameboard {
+    display: grid;
+    width: 100vmin;
+    height: 100vmin;
+    background-color: blueviolet;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(25, 1fr);
+    margin: 20px;
+    box-shadow: 0px 0px 10px fuchsia;
+    border: 5px solid;
+}
+
+.snake {
+    background-color: green;
+    border: 5px solid greenyellow;
+    border-radius: 5px;
+}
+
+.egg {
+    background-color: antiquewhite;
+    border: 5px solid azure;
+    border-radius: 45%;
 }

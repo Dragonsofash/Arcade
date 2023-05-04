@@ -13,6 +13,7 @@ export function update() {
 
 export function draw(gameBoard) {
   const eggEl = document.createElement("div");
+  // eggEl.src = '/Directory/games/snake/images/egg.png'
   eggEl.style.gridRowStart = egg.y;
   eggEl.style.gridColumnStart = egg.x;
   eggEl.classList.add("egg");

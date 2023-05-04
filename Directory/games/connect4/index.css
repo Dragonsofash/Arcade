@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/shapes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: content;
+    color: fuchsia;
+    font-weight: bold;
+}
+
+header {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 8em;
+    -webkit-text-stroke: 3px aqua;
+    text-shadow: 0px 0px 25px;
+}
+
+button {
+    margin: 0px 10px;
+    padding: 10px;
+    background-color: aqua;
+    border: 2px solid fuchsia;
+    color: fuchsia;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+footer > div {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+nav > button {
+    margin: 10px;
+}
+
+form {
+    margin: 15px;
+}
+
+input {
+    width: 50px;
+}
+
+#board {
+    background-color: blueviolet;
+    border: 5px solid;
+    box-shadow: 0px 0px 25px;
+    margin: 15px;
+    padding: 20px;
+}
+
+.spaces {
+    width: 100px;
+    height: 100px;
+    gap: 10px;
+    border: 2px solid;
+    background-color: darkorchid;
+    box-shadow: inset 0px 0px 50px darkblue;
+}

@@ -26,7 +26,7 @@ const winningCombos = [
 ]
 
 function gameStart() {
-    cells.forEach(cell => cell.addEventListener('click', boxClicked))
+    cells.forEach(cell => cell.addEventListener('click', boxClicked, {once: true}))
 }
 
 function boxClicked(event) {
@@ -37,7 +37,12 @@ function boxClicked(event) {
         event.target.innerText = currentPlayer
 
         if(playerHasWon() !== false){
-            alert('${currentPlayer} has won!')
+            return alert('${currentPlayer} has won!')
+            if(currentPlayer == play1) {
+                p1Score += 1
+            } else {
+                p2Score += 1
+            }
         }
         
         currentPlayer = currentPlayer == play1 ? play2 : play1

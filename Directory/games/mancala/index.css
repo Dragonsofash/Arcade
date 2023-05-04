@@ -1,11 +1,14 @@
 body {
-    background-image: url(images/arcadeGrid.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-image: url('images/pink-purple-grid.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: content;
     color: fuchsia;
+    font-weight: bold;
 }
 
 header {
@@ -14,24 +17,6 @@ header {
     font-size: 8em;
     -webkit-text-stroke: 3px aqua;
     text-shadow: 0px 0px 25px;
-}
-
-nav {
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-shrink: 0;
-
-}
-
-.mode {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 10px;
-    padding: 0px 15px;
 }
 
 button {
@@ -48,17 +33,23 @@ button:hover {
     background-color: blueviolet;
 }
 
-p {
-    background-color: aliceblue;
-    border: 2px solid fuchsia;
+footer > div {
+    text-align: center;
     padding: 10px;
-    flex-grow: 1;
+    font-size: 24px;
+}
+
+nav {
+    justify-content: center;
+}
+
+nav > button {
+    margin: 10px;
 }
 
 #board {
     display: flex;
     flex-direction: row;
-    /* background-image: url('images/purpleWood.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0px 0px 25px;
@@ -67,7 +58,7 @@ p {
     margin: 50px 100px;
     padding: 20px;
     border-radius: 15px;
-    flex-shrink: 1;
+    background-color: blueviolet;
 }
 
 #man1 {
@@ -75,7 +66,6 @@ p {
     width: 100px;
     border-radius: 50%;
     margin: 25px;
-    /* background-color: fuchsia; */
     box-shadow: inset rgb(70, 70, 70) 0px 0px 25px 15px;
 }
 
@@ -100,7 +90,6 @@ p {
     width: 100px;
     border-radius: 50%;
     margin: 25px;
-    /* background-color: fuchsia; */
     box-shadow: inset rgb(70, 70, 70) 0px 0px 25px 15px;
 }
 
@@ -109,6 +98,11 @@ p {
     width: 100px;
     border-radius: 50%;
     margin: 10px;
-    /* background-color: fuchsia; */
     box-shadow: inset rgb(70, 70, 70) 0px 0px 25px 15px;
+}
+
+footer > div {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
 }

@@ -33,6 +33,17 @@ button:hover {
     background-color: blueviolet;
 }
 
+#scoreBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#scoreBoard > div {
+    margin: 5px;
+}
+
 footer > div {
     text-align: center;
     padding: 10px;
@@ -52,7 +63,7 @@ nav > button {
     display: grid;
     width: 100vmin;
     height: 100vmin;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     grid-template-rows: repeat(25, 1fr);
     grid-template-columns: repeat(25, 1fr);
     margin: 20px;
@@ -69,5 +80,11 @@ nav > button {
 .egg {
     background-color: antiquewhite;
     border: 5px solid azure;
+    border-radius: 45%;
+}
+
+.rottenEgg {
+    background-color: plum;
+    border: 5px solid purple;
     border-radius: 45%;
 }

@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('images/pink-purple-grid.jpg');
+    background-image: url('images/blue-grid.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     flex-basis: content;

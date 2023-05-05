@@ -1,6 +1,8 @@
+// Initializing start state (No movement)
 let inputDirection = { x: 0, y: 0 };
 let lastInputDirection = { x: 0, y: 0 };
 
+// Adding controls for the snake
 window.addEventListener("keydown", (event) => {
   switch (event.key) {
     case "ArrowUp":

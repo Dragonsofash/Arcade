@@ -63,7 +63,7 @@ nav > button {
     display: grid;
     width: 100vmin;
     height: 100vmin;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     grid-template-rows: repeat(25, 1fr);
     grid-template-columns: repeat(25, 1fr);
     margin: 20px;
